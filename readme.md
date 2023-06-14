@@ -20,6 +20,7 @@ This repository contains a script for sending billing notification emails using 
 
 3. Create a virtual environment and activate it:
    ```shell
+   $ pip install virtualenv
    $ virtualenv venv
    $ source venv/bin/activate
    ```
