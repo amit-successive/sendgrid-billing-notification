@@ -46,7 +46,7 @@ def send_email_notification(email_address, invoice_number):
         msg = EmailMessage()
         msg.set_content(f'Dear Customer,\n\nThis is an urgent reminder that your invoice {invoice_number} is still unpaid. Please make the payment at your earliest convenience.\n\nInvoice Details:\nInvoice Number: {invoice_number}\nDue Date: {due_date}\nBalance: {balance}\nDate: {date}\nUnpaid Balance: {unpaid_balance}\n\nThank you.\nAmit Halder')
 
-        msg['Subject'] = f'[SENDGRID] Payment Reminder - Invoice {invoice_number}'
+        msg['Subject'] = f'[SENDGRID] Payment Reminder - Invoice {invoice_number} (Due Date: {due_date})'
         msg['From'] = SMTP_EMAIL
         msg['To'] = email_address
 
