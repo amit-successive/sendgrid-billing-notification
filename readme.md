@@ -1,50 +1,51 @@
-```markdown
+Sure! Here's an example of how you can include the virtual environment setup instructions in your README file:
+
+---
+
 # SendGrid Billing Notification
 
-This Python script utilizes the SendGrid API to send invoice reminder emails for unpaid invoices.
+This repository contains a script for sending billing notification emails using the SendGrid API.
 
-## Installation
+## Setup
 
 1. Clone the repository:
    ```shell
    $ git clone https://github.com/amit-successive/sendgrid-billing-notification.git
    ```
 
-2. Change into the project directory:
+2. Navigate to the project directory:
    ```shell
    $ cd sendgrid-billing-notification
    ```
 
-3. Install the required dependencies:
+3. Create a virtual environment and activate it:
+   ```shell
+   $ virtualenv venv
+   $ source venv/bin/activate
+   ```
+
+4. Install the required packages:
    ```shell
    $ pip install -r requirements.txt
    ```
 
-## Configuration
+5. Configure environment variables:
+   - Create a `.env` file in the project root directory.
+   - Add the following variables to the `.env` file and replace the placeholder values with your own:
+     ```
+     SENDGRID_API_KEY=your_sendgrid_api_key
+     SMTP_EMAIL=your_smtp_email
+     SMTP_PASSWORD=your_smtp_password
+     RECEIVER_EMAIL=your_receiver_email
+     ```
 
-1. Rename the `.env.example` file to `.env`.
-2. Open the `.env` file and provide values for the following environment variables:
-   - `SENDGRID_API_KEY`: Your SendGrid API key.
-   - `SMTP_EMAIL`: Your SMTP email address for sending emails.
-   - `SMTP_PASSWORD`: The password for your SMTP email address.
-   - `RECEIVER_EMAIL`: The email address where the invoice reminders should be sent.
-
-## Usage
-
-1. Run the script:
+6. Run the script:
    ```shell
    $ python sendgrid.py
    ```
 
-2. The script will retrieve the most recent invoices from SendGrid and send invoice reminder emails for any unpaid invoices.
+---
 
-## Contributing
+You can customize the instructions based on your specific project setup and requirements. Make sure to provide accurate information and include any additional setup steps or configuration details if necessary.
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please submit a bug report or pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
-Please make sure to modify the installation instructions with the appropriate `git clone` URL for your repository.
+Remember to keep the README up-to-date with any changes to the project setup or instructions to help users understand how to use and set up your script.
