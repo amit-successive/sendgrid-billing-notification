@@ -1,0 +1,4 @@
+SENDGRID_API_KEY=your_sendgrid_api_key
+SMTP_EMAIL=your_smtp_email
+SMTP_PASSWORD=your_smtp_password
+RECEIVER_EMAIL=your_receiver_email
