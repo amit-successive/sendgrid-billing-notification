@@ -1,5 +1,3 @@
-Sure! Here's an example of how you can include the virtual environment setup instructions in your README file:
-
 ---
 
 # SendGrid Billing Notification
